@@ -1,0 +1,623 @@
+/********************************************************************************************/
+/*********************************** GRUND LAYOUT *******************************************/
+/********************************************************************************************/
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0;  
+  font-family: Sans-Serif;
+}
+
+.container{
+    width: 100%;
+    background-color: #000000;
+}
+
+/********************************************************************************************/
+/************************************ HEADER // MENY ************************************************/
+/********************************************************************************************/
+
+.lang {
+    margin: 20px;
+    top:0;
+    position: absolute;
+    transition: transform .3s;
+}
+
+.lang:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 760px) {
+    .lang {
+        width: 12%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .lang{
+         width: 12%;
+    }    
+}
+
+
+#navbar {
+  background-color: #000000; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  left: 0px;  
+  height: 0;    
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 1;
+}
+
+@media screen and (max-width: 760px) {
+    #navbar{
+        margin-top: 2px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    #navbar{
+         margin-top: 2px;
+    }    
+}
+
+
+.menu{
+    text-align: right;
+    list-style-type: none;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 850px;
+    
+    /*border: red 1px solid;*/
+}
+
+@media screen and (max-width: 760px) {
+    .menu{
+        font-size: 10px;
+        display: inline;
+        float: right;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .menu{
+        font-size: 10px;
+        display: inline;
+        float: right;
+    }    
+}
+
+.page{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0px 30px 0px 30px;
+    transition: 0.3s ease;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    height: 300px;
+}
+
+.page:hover{
+    text-decoration: none;
+    color: #424242;
+}
+
+@media screen and (max-width: 760px) {
+    .page{
+        padding: 0px 5px 0px 5px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .page{
+        padding: 0px 5px 0px 5px;
+    
+    }    
+}
+
+#menu-page1 {
+    text-decoration: none;
+    padding-bottom: 210px;
+    background: linear-gradient(25deg, #FF000000 44%, #f8d000 44%);
+}
+
+@media screen and (max-width: 760px) {
+    .#menu-page1{
+       height: 60px;
+       padding-bottom: 12px;
+       background: linear-gradient(0deg, #f8d000 0%, #f8d000 0%);
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    #menu-page1{
+        height: 60px;
+        padding-bottom: 12px;
+        background: linear-gradient(0deg, #f8d000 0%, #f8d000 0%);
+    }    
+}
+
+
+#menu-page2 {
+    text-decoration: none;
+    padding-bottom: 150px;
+    background: linear-gradient(25deg, #FF000000 33%, #f800e2 33%);
+}
+
+@media screen and (max-width: 760px) {
+    .#menu-page2{
+       height: 80px;
+       padding-bottom: 9px;
+       background: linear-gradient(0deg, #f800e2 0%, #f800e2 0%);
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    #menu-page2{
+        height: 80px;
+        padding-bottom: 9px;
+        background: linear-gradient(0deg, #f800e2 0%, #f800e2 0%);
+    }    
+}
+
+
+#menu-page3 {
+    text-decoration: none;
+    padding-bottom: 90px;
+    background: linear-gradient(25deg, #FF000000 22%, #00bae2 22%);
+}
+
+@media screen and (max-width: 760px) {
+    .#menu-page3{
+       height: 105px;
+       padding-bottom: 9px;
+       background: linear-gradient(0deg, #00bae2 0%, #00bae2 0%);
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    #menu-page3{
+        height: 105px;
+        padding-bottom: 9px;
+        background: linear-gradient(0deg, #00bae2 0%, #00bae2 0%);
+    }    
+}
+
+
+#menu-page4 {
+    text-decoration: none;
+    padding-bottom: 30px;
+    background: linear-gradient(25deg, #FF000000 11%, #04c985 11%);
+}
+
+@media screen and (max-width: 760px) {
+    .#menu-page4{
+       height: 130px;
+       padding-bottom: 10px;
+       background: linear-gradient(0deg, #04c985 0%, #04c985 0%);
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    #menu-page4{
+        height: 130px;
+        padding-bottom: 10px;
+        background: linear-gradient(0deg, #04c985 0%, #04c985 0%);
+    }    
+}
+
+
+/********************************************************************************************/
+/*************************************** MAIN ***********************************************/
+/********************************************************************************************/
+
+
+/**************** OMSLUTER ALLT I MAIN OCH ALLA DIVAR *******************************/
+
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #000000;
+}
+
+.container-fluid> div{
+    /*width: 960px;*/
+    width: 1200px;
+    margin: 0px auto 0px auto;  
+}
+
+/**************** MAIN HEM ***********************************************************/
+
+.mainHem{
+    height: 720px;
+}
+
+@media screen and (max-width: 760px) {
+    .mainHem{
+         height: 500px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .mainHem{
+         height: 500px;
+    }    
+}
+
+.cvimg {
+    width: 569px;
+    height: 400px;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 22%;
+}
+
+
+@media screen and (max-width: 760px) {
+    .cvimg {
+        width: 90%;
+        height: 30%;
+        margin-left: 0px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .cvimg {
+        width:  90%;
+        height: 30%;
+        margin-left: 0px;
+    }    
+}
+
+.TitelText{
+    margin: 430px 0px 0px 260px;
+    color: #FFFFFF;
+    font-size: 35px;
+    line-height: 1.0;
+    z-index: 1;
+    position: absolute;
+}
+
+@media screen and (max-width: 760px) {
+    .TitelText{
+         font-size: 30px;
+         color: #FFFFFF;
+         margin: 290px 0px 0px 570px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+      .TitelText{
+         font-size: 30px;
+         color: #FFFFFF;
+         margin: 290px 0px 0px 570px;
+    }    
+}
+
+
+/**************** MAIN KLARA *********************************************************/
+
+.mainKlara{
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 760px) {
+    .mainKlara{
+          margin-top: 0;
+    }    
+}
+
+.profil{
+    background-color: #000000;
+}
+
+.linje{
+    background-color: #424242;
+    width: 30%;
+    padding: 20px 0px 20px 0px;
+}
+
+@media screen and (max-width: 760px) {
+    .linje{
+         width: 100%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .linje{
+          width: 100%;
+    }    
+}
+
+.liprofil{
+    font-family: Sans-Serif;
+    font-size: 17px;
+    list-style-type: none;
+    line-height: 2.0;
+    color: #000000;
+}
+
+@media screen and (max-width: 760px) {
+    .liprofil{
+         padding-top: 0px;
+    }    
+}
+
+.kunskaper {
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+@media screen and (max-width: 1100px) {
+    .kunskaper{
+         padding-left: 350px;
+        
+    }    
+}
+
+.erfarenheter {
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+    .erfarenheter{
+         padding-left: 350px;
+        
+    }    
+}
+
+.lipunkt{
+    list-style-type: none;
+    margin-left: 30px; 
+}
+
+.profilbox{
+    width: 65%;
+    float: right;
+    margin-top: 100px;
+    font-size: 17px;
+    line-height: 2.0;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 760px) {
+    .profilbox{
+         width: 100%;
+         float:none;
+         margin: 300px 0px 40px 0px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .profilbox {
+         width: 100%;
+         float:none;
+         margin: 300px 0px 40px 0px;
+    }    
+}
+
+.profilboxtitel{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+@media screen and (max-width: 760px) {
+    .profilboxtitel{
+         font-size: 17px;
+    }    
+}
+
+/**************** MAIN KONTAKT ***********************************************************/
+
+.mainKontakt{
+    padding: 150px 0px 150px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #00bae2;
+}
+
+@media screen and (max-width: 760px) {
+    .mainKontakt{
+         padding: 80px 0px 80px 0px;
+         font-size: 17px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .mainKontakt {
+         padding: 80px 0px 80px 0px;
+         font-size: 17px;
+    }    
+}
+
+.socialmedia{
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    transition: transform .3s;
+}
+
+.socialmedia:hover {
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3); 
+}
+
+@media screen and (max-width: 760px) {
+    .socialmedia {
+        height: 12%;
+        width: 12%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .socialmedia {
+        height: 12%;
+        width: 12%;
+    }    
+}
+
+
+/**************** MAIN PORTFOLIO ***********************************************************/
+
+.mainPortfolio{
+   
+}
+
+.imgportfolio1{
+    margin-bottom: 50px;
+}
+
+.imgportfolio1:hover{
+    opacity: 0.4;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;   
+}
+
+@media screen and (max-width: 760px) {
+    .imgportfolio1 {
+        height: 20%;
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .imgportfolio1 {
+        height: 40%;
+        width: 100%;
+    }    
+}
+
+
+.imgportfolio2{
+    float: right;
+    margin-bottom: 50px;
+}
+
+.imgportfolio2:hover{
+    opacity: 0.4;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;   
+}
+
+@media screen and (max-width: 760px) {
+    .imgportfolio2 {
+        height: 20%;
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .imgportfolio2 {
+        height: 40%;
+        width: 100%;
+    }    
+}
+
+
+.imgportfolio3{
+    margin-bottom: 50px;
+}
+
+.imgportfolio3:hover{
+    opacity: 0.4;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;   
+}
+
+@media screen and (max-width: 760px) {
+    .imgportfolio3 {
+        height: 20%;
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .imgportfolio3 {
+        height: 40%;
+        width: 100%;
+    }    
+}
+
+
+.imgportfolio4{
+    float: right;
+    margin-bottom: 50px;
+}
+
+.imgportfolio4:hover{
+    opacity: 0.4;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;   
+}
+
+@media screen and (max-width: 760px) {
+    .imgportfolio4 {
+        height: 20%;
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .imgportfolio4 {
+        height: 40%;
+        width: 100%;
+    }    
+}
+
+
+.imgportfolio5{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 760px) {
+    .imgportfolio5 {
+        float: left;
+        height: 20%;
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .imgportfolio5 {
+        height: 40%;
+        width: 100%;
+    }    
+}
+
+
+.imgportfolio6{
+    float: right;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 760px) {
+    .imgportfolio6 {
+        float: left;
+        height: 20%;
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .imgportfolio6 {
+        height: 40%;
+        width: 100%;
+    }    
+}
