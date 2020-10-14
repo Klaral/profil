@@ -116,6 +116,7 @@ body {
 @media screen and (max-width: 760px) {
     .page{
         padding: 0px 45px 0px 45px;
+        
     }    
 }
 
@@ -281,10 +282,11 @@ body {
     }    
 }
 
+
 .TitelText{
     margin: 430px 0px 0px 260px;
-    color: #FFFFFF;
-    font-size: 35px;
+    color: #f8d000;
+    font-size: 40px;
     line-height: 1.0;
     z-index: 1;
     position: absolute;
@@ -292,16 +294,14 @@ body {
 
 @media screen and (max-width: 760px) {
     .TitelText{
-         font-size: 45px;
-         color: #FFFFFF;
+         font-size: 50px;
          margin: 240px 0px 0px 550px;
     }    
 }
 
 @media screen and (max-width: 1100px) {
       .TitelText{
-         font-size: 45px;
-         color: #FFFFFF;
+         font-size: 50px;
          margin: 240px 0px 0px 550px;
     }    
 }
@@ -420,6 +420,10 @@ body {
     }    
 }
 
+.profilboxtitel::first-letter {
+  color: #f800e2;
+}
+
 .profilboxtitel{
     font-size: 40px;
     font-weight: bold;
@@ -445,21 +449,21 @@ body {
     padding: 150px 0px 150px 0px;
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 23px;
     color: #00bae2;
 }
 
 @media screen and (max-width: 760px) {
     .mainKontakt{
          padding: 80px 0px 80px 0px;
-         font-size: 35px;
+         font-size: 33px;
     }    
 }
 
 @media screen and (max-width: 1100px) {
     .mainKontakt {
          padding: 80px 0px 80px 0px;
-         font-size: 35px;
+         font-size: 33px;
     }    
 }
 
@@ -492,6 +496,28 @@ body {
 
 
 /**************** MAIN PORTFOLIO ***********************************************************/
+
+.portfolioboxtitel{
+    padding: 0px 0px 100px 0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal;
+    color: #04c985;
+}
+
+@media screen and (max-width: 760px) {
+    .portfolioboxtitel{
+         font-size: 50px;
+    }    
+}
+
+@media screen and (max-width: 1100px) {
+    .portfolioboxtitel{
+         font-size: 50px;
+    }    
+}
+
 
 .mainPortfolio{
    
